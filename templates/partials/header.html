@@ -3,7 +3,7 @@
         <header class="header_area">
             <div class="logo_part">
             	<div class="container">
-            		<a class="logo" href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
+            		<a class="logo" href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt=""></a>
             	</div>
             </div>
 			<div class="main_menu">
@@ -19,7 +19,7 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+								<li class="nav-item active"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
 								<li class="nav-item"><a class="nav-link" href="category.html">Category</a></li>
 								<li class="nav-item"><a class="nav-link" href="archive.html">Archive</a></li>
 								<li class="nav-item submenu dropdown">
